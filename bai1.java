@@ -20,6 +20,6 @@ public class bai1 {
  System.out.println("BCNN cua a va b la "+d);
  
 	}
-
 }
-SUA ROI NHE
+
+//SUA ROI NHE . OK
