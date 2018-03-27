@@ -16,7 +16,8 @@ public static void main (String[] args) {
 	System.out.println(" phan tu lon nhat la "+timphantumax(b,a));
 }
 
-public static int timphantumax(int b[],int a) {
+public static int timphantulonnhat
+	(int b[],int a) {
 	int max=b[0];
 	int i=0;
 	do {
