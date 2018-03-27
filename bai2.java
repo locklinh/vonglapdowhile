@@ -10,7 +10,7 @@ public class bai2 {
 	 System.out.print(" nhap vao n, b");
 	 n=new Scanner(System.in).nextInt();
 	 b=new Scanner(System.in).nextInt();
-	 /* aloalo1234*/
+	 /* aloalo123dádád4*/
  }
 }
 <<<<<<< HEAD
