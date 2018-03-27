@@ -1,4 +1,4 @@
-import javax.swing.JFrame;
+﻿import javax.swing.JFrame;
 import javax.swing.JLabel;
 //public class Linhxinhgai {
 	public class Linhxinhgai{
@@ -6,6 +6,8 @@ import javax.swing.JLabel;
 		    JFrame frame = new JFrame("Linh xinh gai");
 		    final JLabel label = new JLabel("Linh xinh gái");
 		    frame.getContentPane().add(label);
+//rất là xinh
+//rất là xinh
 //rất là xinh
 		    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		    frame.pack();
