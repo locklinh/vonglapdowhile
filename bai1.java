@@ -6,6 +6,7 @@ public class bai1 {
 	public static void main(String[] args) {
 		Scanner keyboard=new Scanner(System.in);
 		System.out.println("a=");
+System.out.println("a=");System.out.println("a=");System.out.println("a=");
 		int a=keyboard.nextInt();
 		System.out.println("b=");
 		int b=keyboard.nextInt();
