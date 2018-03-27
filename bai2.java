@@ -13,3 +13,4 @@ public class bai2 {
 	 /* aloalo1234*/
  }
 }
+//vo day 
