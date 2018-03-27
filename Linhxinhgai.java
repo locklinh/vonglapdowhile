@@ -6,6 +6,7 @@ import javax.swing.JLabel;
 		    JFrame frame = new JFrame("Linh xinh gai");
 		    final JLabel label = new JLabel("Linh xinh gái");
 		    frame.getContentPane().add(label);
+
 //xau vai l***********
 
 		    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
