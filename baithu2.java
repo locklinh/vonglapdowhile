@@ -29,7 +29,7 @@ public class baithu2 {
 		}
 		return (n);
 	}
-
+	/* hihihhih */
 	public static void main(String[] args) {
 		System.out.println("Nhap n \n");
 		int n = nhap();

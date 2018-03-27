@@ -24,7 +24,7 @@ public static int timphantumax(int b[],int a) {
 			max=b[i];
 			
 		}
-		i++;
+		i+
 	}
 		while(i<a);
 	return max;
