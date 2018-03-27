@@ -1,0 +1,110 @@
+package ObjectFile;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main 
+{
+	public static void GhiFiletext(String name)
+	{
+		try(FileWriter fw = new FileWriter(new File(name)))
+		{
+			PrintWriter pw = new PrintWriter(fw);
+			pw.println("Hello minh la Dung");
+		} catch (Exception e) 
+		{
+			System.out.println("Had an Exception");
+		}
+	}
+	public static void DocFiletext(String name)
+	{
+		try(Scanner sc = new Scanner(new File(name)))
+		{
+			String str = sc.nextLine();
+			System.out.println(str);
+		} catch (Exception e) 
+		{
+			System.out.println("Had an Exception");
+		}
+	}
+	
+	public void GhiFileDSObject(ArrayList<SinhVien> list, String name)
+	{
+		try(FileOutputStream fos = new FileOutputStream(new File(name)))
+		{
+			ObjectOutputStream oos = new  ObjectOutputStream(fos);
+			oos.writeObject(list);
+		} catch (Exception e) 
+		{
+			System.out.println("Had an Exception");
+		}
+	}
+	public void GhiFileObject(SinhVien sv, String name)
+	{
+		try(FileOutputStream fos = new FileOutputStream(new File(name)))
+		{
+			ObjectOutputStream oos = new  ObjectOutputStream(fos);
+			oos.writeObject(sv);
+		} catch (Exception e) 
+		{
+			System.out.println("Had an Exception");
+		}
+	}
+	
+	@SuppressWarnings("unchecked")
+	public ArrayList<SinhVien> DocFileDSObject(String name)
+	{
+		ArrayList<SinhVien> list = new ArrayList<SinhVien>();
+		try(FileInputStream fos = new FileInputStream(new File(name)))
+		{
+			ObjectInputStream oos = new  ObjectInputStream(fos);
+			list = (ArrayList<SinhVien>)oos.readObject();
+		} catch (Exception e) 
+		{
+			System.out.println("Had an Exception");
+		}
+		return list;
+	}
+	public SinhVien DocFileObject(String name)
+	{
+		SinhVien sv = null;
+		try(FileInputStream fos = new FileInputStream(new File(name)))
+		{
+			ObjectInputStream oos = new  ObjectInputStream(fos);
+			sv = (SinhVien)oos.readObject();
+		} catch (Exception e) 
+		{
+			System.out.println("Had an Exception");
+		}
+		return sv;
+	}
+	
+	
+	public static void main(String[] args) 
+	{
+		GhiFiletext("test.txt");
+		DocFiletext("test.txt");
+		ArrayList<SinhVien> listsv = new ArrayList<SinhVien>();
+		listsv.add(new SinhVien(19,"Le Van Dung","Thanh Hoa"));
+		listsv.add(new SinhVien(18,"Le Hoang Duong","Ha Noi"));
+		listsv.add(new SinhVien(21,"Dao Quang Trong","Phu Tho"));
+		listsv.add(new SinhVien(20,"Luu Duc Bao","Da Nang"));
+		Main m = new Main();
+		m.GhiFileDSObject(listsv,"DanhSachSv.txt");
+		ArrayList<SinhVien> lsv = m.DocFileDSObject("DanhSachSv.txt");
+		for(SinhVien s1:lsv)
+		{
+			System.out.println(s1.getAge() + " " + s1.getName() + " " + s1.getAddress());
+		}
+	}
+
+}
+
+
