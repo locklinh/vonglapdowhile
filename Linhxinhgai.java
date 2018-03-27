@@ -4,7 +4,7 @@ import javax.swing.JLabel;
 	public class Linhxinhgai{
 		  public static void main(String[] args) {
 		    JFrame frame = new JFrame("Linh xinh gai");
-		    final JLabel label = new JLabel("Linh xinh gái");
+		    final JLabel label = new JLabel("Linh xinh gaÌ�i");
 		    frame.getContentPane().add(label);
 
 //xau vai l***********
@@ -13,5 +13,6 @@ import javax.swing.JLabel;
 		    frame.pack();
 		    frame.setVisible(true);
 		  }
-		}
+		
 
+//sdjdfhdskfh

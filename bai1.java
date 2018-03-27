@@ -1,3 +1,4 @@
+//I'm in top
 //package default;
 import java.util.Scanner;
 
@@ -29,8 +30,4 @@ System.out.println("a=");System.out.println("a=");System.out.println("a=");
 	}
 }
 
-<<<<<<< HEAD
-//SUA ROI NHE . OK
-=======
-//SUA ROI NHE . OK FINE
->>>>>>> 14ddae678c6aa2d1341889a35f6f59c519aa1be7
+//hoang 23
