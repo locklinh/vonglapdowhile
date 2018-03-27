@@ -2,7 +2,8 @@
 import java.util.Scanner;
 
 public class bai1 {
-	
+// xau vai lon
+
 	public static void main(String[] args) {
 		Scanner keyboard=new Scanner(System.in);
 		System.out.println("a=");
