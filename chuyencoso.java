@@ -16,7 +16,7 @@ public class chuyencoso {
 			i /= 10;
 			
 		}
-		return (sum);
+		
 	}
 
 	
