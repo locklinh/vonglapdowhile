@@ -21,5 +21,6 @@ System.out.println("a=");System.out.println("a=");System.out.println("a=");
  System.out.println("BCNN cua a va b la "+d);
  
 	}
-
 }
+
+//SUA ROI NHE . OK
