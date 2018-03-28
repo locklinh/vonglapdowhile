@@ -7,7 +7,7 @@ public class chuyencoso {
 	// n=new Scanner (System.in).nextInt();
 	// System.out.println("nhap vao co so b");
 	// b=new Scanner (System.in).nextInt();
-	public static int tinhTong(long i) {
+	
 		int sum = 0;
 		long n;
 		while (i != 0) {
@@ -16,10 +16,10 @@ public class chuyencoso {
 			i /= 10;
 			
 		}
-		return (sum);
+		
 	}
 
-	public static void main(String[] args) {
+	
 		System.out.print("Nhap n");
 		int n;
 		n = new Scanner(System.in).nextInt();
