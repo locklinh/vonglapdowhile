@@ -11,5 +11,5 @@ import javax.swing.JLabel;
 		    frame.pack();
 		    frame.setVisible(true);
 		  }
-		}
+		
 
